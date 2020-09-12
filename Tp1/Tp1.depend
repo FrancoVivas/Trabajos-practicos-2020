@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1599774237 source:c:\users\n3630024213\desktop\carrera programacion\codeblocks\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1599853465 c:\users\n3630024213\desktop\carrera programacion\codeblocks\tp1\funciones.h
+
