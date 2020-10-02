@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "menu.h"
-#include "arrayEmployees.h"
+#include "arrayEmpleados.h"
 #include "pedirDatos.h"
 
 #define cantidadEmplados 1

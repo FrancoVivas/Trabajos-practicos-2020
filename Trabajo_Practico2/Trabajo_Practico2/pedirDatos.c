@@ -3,7 +3,18 @@
 #include <string.h>
 #include "pedirDatos.h"
 
-int pedirNumeroEntero(int* resultado, char* mensaje, char*mensajeDeError, int* maximo, int* minimo, int* intentos)
+/** \brief el usuario ingresa un numero entero
+ *
+ * \param resultado int* lugar de memoria
+ * \param mensaje char* mensaje al mostrar
+ * \param char*mensajeDeError mensaje al ingresar algo incorrecto
+ * \param maximo int* numero maximo al ser ingresado
+ * \param minimo int* numero minimo al ser ingresado
+ * \param intentos int* numero de intentos del usuario
+ * \return int 0 si esta bien; -1 si hubo error
+ *
+ */
+int pedirNumeroEntero(int* resultado, int* mensaje, int*mensajeDeError, int* maximo, int* minimo, int* intentos)
 {
     int espacioEnInt;
     int retornar=-1;
@@ -28,10 +39,21 @@ int pedirNumeroEntero(int* resultado, char* mensaje, char*mensajeDeError, int* m
     return retornar;
 }
 
+/** \brief el usuario ingresa un numero flotante
+ *
+ * \param resultado int* lugar de memoria
+ * \param mensaje char* mensaje al mostrar
+ * \param char*mensajeDeError mensaje al ingresar algo incorrecto
+ * \param maximo int* numero maximo al ser ingresado
+ * \param minimo int* numero minimo al ser ingresado
+ * \param intentos int* numero de intentos del usuario
+ * \return int 0 si esta bien; -1 si hubo error
+ *
+ */
 float pedirNumeroFlotante(float* resultado, char* mensaje, char*mensajeDeError, float* maximo, float* minimo, int* intentos)
 {
-    float espacioEnFloat
-    int retornar=-1
+    float espacioEnFloat;
+    int retornar=-1;
     if(resultado != NULL && mensaje != NULL && mensajeDeError != NULL && minimo <= maximo && intentos >= 0)
     {
         do
@@ -53,6 +75,17 @@ float pedirNumeroFlotante(float* resultado, char* mensaje, char*mensajeDeError, 
     return retornar;
 }
 
+/** \brief el usuario ingresa un caracter
+ *
+ * \param resultado int* lugar de memoria
+ * \param mensaje char* mensaje al mostrar
+ * \param char*mensajeDeError mensaje al ingresar algo incorrecto
+ * \param maximo int* numero maximo al ser ingresado
+ * \param minimo int* numero minimo al ser ingresado
+ * \param intentos int* numero de intentos del usuario
+ * \return int 0 si esta bien; -1 si hubo error
+ *
+ */
 char pedirCaracter(char* resultado, char* mensaje, char*mensajeDeError, char* maximo, char* minimo, int* intentos)
 {
     char espacioEnChar;
