@@ -14,3 +14,20 @@
 	<string.h>
 	"pedirDatos.h"
 
+1601692406 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico2\trabajo_practico2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"arrayEmpleados.h"
+	"pedirDatos.h"
+
+1601693308 c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico2\trabajo_practico2\arrayempleados.h
+
+1601693308 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico2\trabajo_practico2\arraysempleados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"arrayEmpleados.h"
+	"pedirDatos.h"
+

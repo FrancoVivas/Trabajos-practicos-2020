@@ -149,7 +149,7 @@ int eliminarEmpleado(empleado lista[], int len, int id)
  * \return int
  *
  */
-int mostrarEmpleados(empleado lista[]; int len, int largo)
+int mostrarEmpleados(empleado lista[], int len)
 {
     printf("Lista de empleados\n");
     printf("%8s|%20s|%20s|%8s|%8s\n", "id", "nombre", "apellido", "salario", "sector");

@@ -15,4 +15,4 @@ int mirarEspacioLibre(empleado lista[], int len);
 int agregarEmpleado(empleado lista[], int len, int id, char nombre, char apellido, float salario, int sector);
 int encontrarEmpleadoPorId(empleado lista[], int len, int id);
 int eliminarEmpleado(empleado lista[], int len, int id);
-int mostrarEmpleados(empleado lista[]; int len, int largo);
+int mostrarEmpleados(empleado lista[], int len);
