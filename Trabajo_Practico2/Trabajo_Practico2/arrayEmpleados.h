@@ -10,9 +10,9 @@ typedef struct
     int isEmpty;
 }empleado;
 
-int iniciarEmpleado(Empleados lista[], int len);
-int agregarEmpleado(Empleados lista[], int len, int id, char nombre, char apellido, float salario, int sector);
-int encontrarEmpleadoPorId(Empleados lista[], int len, int id);
-int eliminarEmpleado(Empleados lista[], int len, int id);
-int ordenarEmpleados(Empleados lista[], int len, int ordenar);
-int mostrarEmpleados(Empleados lista[]; int len, int largo);
+int iniciarEmpleado(empleado lista[], int len, int value);
+int mirarEspacioLibre(empleado lista[], int len);
+int agregarEmpleado(empleado lista[], int len, int id, char nombre, char apellido, float salario, int sector);
+int encontrarEmpleadoPorId(empleado lista[], int len, int id);
+int eliminarEmpleado(empleado lista[], int len, int id);
+int mostrarEmpleados(empleado lista[]; int len, int largo);

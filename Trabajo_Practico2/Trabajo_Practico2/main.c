@@ -8,7 +8,7 @@
 #include "arrayEmpleados.h"
 #include "pedirDatos.h"
 
-#define cantidadEmplados 1
+#define cantidadEmpleados 1
 #define empty 0
 #define ocupado 1
 
@@ -16,16 +16,16 @@
 int main(void)
 {
     setbuf(stdout, NULL);
-    empleado list[cantidadEmplados];
+    empleado lista[cantidadEmpleados];
     int id=0;
-    char nombre;
-    char apellido;
+    char nombre[20];
+    char apellido[20];
     float salario=0;
     int sector=0;
     int opcion;
     int indexEspacioLibre;
 
-    iniciarEmpleado(lista, cantidadEmplados, empty);
+    iniciarEmpleado(lista, cantidadEmpleados, empty);
 
     do
     {
@@ -33,23 +33,24 @@ int main(void)
             switch(opcion)
             {
             case 1:
-                indexEspacioLibre=mirarPorEspacioLibre(lista, cantidadEmplados);
+                indexEspacioLibre=mirarEspacioLibre(lista, cantidadEmpleados);
                 if(indexEspacioLibre==-1)
                 {
                     printf("No hay lugares libres.");
                 }
-                agregarEmpleado(lista, cantidadEmplados, indexEspacioLibre, nombre[20], apellido[20], salario, sector);
+                agregarEmpleado(lista, cantidadEmpleados, indexEspacioLibre, nombre[20], apellido[20], salario, sector);
                 break;
             case 2:
-                encontrarEmpleadoPorId(lista, cantidadEmplados, id);
+                encontrarEmpleadoPorId(lista, cantidadEmpleados, id);
                 break;
             case 3:
-                encontrarEmpleadoPorId(lista, cantidadEmplados, id);
+                encontrarEmpleadoPorId(lista, cantidadEmpleados, id);
                 break;
             case 4:
-                mostrarEmpleados(lista, cantidadEmplados);
+                mostrarEmpleados(lista, cantidadEmpleados);
                 break;
             }
+            printf("%d", opcion);
     }while(opcion!=5);
     return 0;
 }

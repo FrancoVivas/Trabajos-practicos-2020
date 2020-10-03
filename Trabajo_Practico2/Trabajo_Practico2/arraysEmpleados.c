@@ -16,10 +16,10 @@
  * \return int si da -1, tira error y si da 0 esta bien
  *
  */
-int iniciarEmpleado(Empleados lista[], int len, int value)
+int iniciarEmpleado(empleado lista[], int len, int value)
 {
     int i;
-    for(i=0, i<cantidadEmplados, i++)
+    for(i=0; i<cantidadEmplados; i++)
     {
         lista[i].isEmpty=value;
     }
@@ -58,11 +58,11 @@ int buscarEspacioVacio(empleado lista[], int len)
  * \return int devuelve -1 si da error
  *
  */
-int agregarEmpleado(Empleados lista[], int len, int id, char name, char apellido, float salario, int sector)
+int agregarEmpleado(empleado lista[], int len, int id, char name, char apellido, float salario, int sector)
 {
     int retornar=-1;
     int i;
-    for(i=0; i<len, i++)
+    for(i=0; i<len; i++)
     {
         int idEmpleado=1;
         printf("Ingrese un nombre");
@@ -82,9 +82,9 @@ int agregarEmpleado(Empleados lista[], int len, int id, char name, char apellido
         scanf("%[^\n]", lista[i].sector);
 
         lista[i].isEmpty=ocupado;
-        retornar=0
+        retornar=0;
     }
-    return retornar
+    return retornar;
 }
 
 /** \brief encuentra un empleado por id y retorna el indice de la posicion en array
@@ -95,16 +95,16 @@ int agregarEmpleado(Empleados lista[], int len, int id, char name, char apellido
  * \return int retorna la posicion del indice de empleado
  *
  */
-int encontrarEmpleadoPorId(Empleados lista[], int len, int id)
+int encontrarEmpleadoPorId(empleado lista[], int len, int id)
 {
     int idIngresado;
-    int indice id;
-    int i
+    int indiceId;
+    int i;
 
     printf("Ingrese id.\n");
     scanf("%d", idIngresado);
 
-    for(i=0, i<len, i++)
+    for(i=0; i<len; i++)
     {
         if(lista[i].id==idIngresado)
         {
@@ -125,7 +125,7 @@ int encontrarEmpleadoPorId(Empleados lista[], int len, int id)
  * \return int retorna -1 si da error
  *
  */
-int eliminarEmpleado(Empleados lista[], int len, int id)
+int eliminarEmpleado(empleado lista[], int len, int id)
 {
     int idIngresado;
     int i;
@@ -133,14 +133,14 @@ int eliminarEmpleado(Empleados lista[], int len, int id)
     printf("Ingrese el id");
     scanf("%d", idIngresado);
 
-    for(i=0, i<len, i++)
+    for(i=0; i<len; i++)
     {
         if(lista[i].id==idIngresado)
         {
             lista[i].isEmpty=empty;
         }
     }
-    return -1
+    return -1;
 }
 
 /** \brief muestra el contenido del array empleados
@@ -149,7 +149,7 @@ int eliminarEmpleado(Empleados lista[], int len, int id)
  * \return int
  *
  */
-int mostrarEmpleados(Empleados lista[]; int len)
+int mostrarEmpleados(empleado lista[]; int len, int largo)
 {
     printf("Lista de empleados\n");
     printf("%8s|%20s|%20s|%8s|%8s\n", "id", "nombre", "apellido", "salario", "sector");

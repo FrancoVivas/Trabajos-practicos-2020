@@ -1,7 +1,1 @@
-
-#include "menu.h"
-
-int menu()
-{
-
-}
+int menu();

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1601677965 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico2\trabajo_practico2\menu.c
+	<stdio.h>
+	"menu.h"
+	"pedirDatos.h"
+
+1601678013 c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico2\trabajo_practico2\menu.h
+
+1601690905 c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico2\trabajo_practico2\pedirdatos.h
+
+1601691345 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico2\trabajo_practico2\pedirdatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pedirDatos.h"
+

@@ -14,7 +14,7 @@
  * \return int 0 si esta bien; -1 si hubo error
  *
  */
-int pedirNumeroEntero(int* resultado, int* mensaje, int*mensajeDeError, int* maximo, int* minimo, int* intentos)
+int pedirNumeroEntero(int* resultado, char* mensaje, char* mensajeDeError, int* maximo, int* minimo, int* intentos)
 {
     int espacioEnInt;
     int retornar=-1;
@@ -50,16 +50,16 @@ int pedirNumeroEntero(int* resultado, int* mensaje, int*mensajeDeError, int* max
  * \return int 0 si esta bien; -1 si hubo error
  *
  */
-float pedirNumeroFlotante(float* resultado, char* mensaje, char*mensajeDeError, float* maximo, float* minimo, int* intentos)
+float pedirNumeroFlotante(float* resultado, char* mensaje, char* mensajeError, float minimo, float maximo, int intentos)
 {
     float espacioEnFloat;
     int retornar=-1;
-    if(resultado != NULL && mensaje != NULL && mensajeDeError != NULL && minimo <= maximo && intentos >= 0)
+    if(resultado != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && intentos >= 0)
     {
         do
         {
             printf("%s", mensaje);
-            scanf("&d", &espacioEnFloat);
+            scanf("%f", &espacioEnFloat);
             if(espacioEnFloat >= minimo && espacioEnFloat <= maximo)
             {
                 *resultado=espacioEnFloat;
@@ -67,7 +67,7 @@ float pedirNumeroFlotante(float* resultado, char* mensaje, char*mensajeDeError, 
                 break;
             }else
             {
-                printf("%s", mensajeDeError);
+                printf("%s", mensajeError);
                 intentos--;
             }
         }while(intentos>=0);
@@ -86,11 +86,11 @@ float pedirNumeroFlotante(float* resultado, char* mensaje, char*mensajeDeError, 
  * \return int 0 si esta bien; -1 si hubo error
  *
  */
-char pedirCaracter(char* resultado, char* mensaje, char*mensajeDeError, char* maximo, char* minimo, int* intentos)
+char pedirCaracter(char* resultado, char* mensaje, char* mensajeError, char minimo, char maximo, int intentos)
 {
     char espacioEnChar;
     int retornar=-1;
-    if(resultado != NULL && mensaje != NULL && mensajeDeError != NULL && minimo <= maximo && intentos >= 0)
+    if(resultado != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && intentos >= 0)
     {
         do
         {
@@ -103,7 +103,7 @@ char pedirCaracter(char* resultado, char* mensaje, char*mensajeDeError, char* ma
                 break;
             }else
             {
-                printf("%s", mensajeDeError);
+                printf("%s", mensajeError);
                 intentos--;
             }
         }while(intentos>=0);
