@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1604058664 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+
+1604059787 c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\employee.h
+	"LinkedList.h"
+
+1604059628 c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\linkedlist.h
+
+1604058795 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\funcionesget.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funcionesGet.h"
+
+1604060029 c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\funcionesget.h
+
+1604060373 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"Controller.h"
+	"funcionesGet.h"
+
+1604060330 c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\controller.h
+
+1604059345 source:c:\users\n3630024213\desktop\tp_laboratorio-programacion_1\trabajo_practico3\tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
