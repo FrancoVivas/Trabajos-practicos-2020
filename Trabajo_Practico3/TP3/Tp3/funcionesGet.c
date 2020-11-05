@@ -125,7 +125,7 @@ void getString(char mensaje[], char input[])
 
 int getStringLetras(char mensaje[], char input[])
 {
-    char auxiliar[256];
+    char auxiliar[50];
     getString(mensaje, auxiliar);
     if(esSoloLetras(auxiliar))
     {

@@ -288,7 +288,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
 
     if(pArrayListEmployee != NULL)
     {
-        printf("Ingrese el ID del empleado: ");
+        printf("Ingrese el Id del empleado: ");
         fflush(stdin);
         gets(idChar);
 
@@ -448,3 +448,4 @@ int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
     }
     return retorno;
 }
+
