@@ -343,10 +343,10 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
     Employee* pEmpleado;
 
     int retorno = -1;
-    int i;
+    /*int i;
     int id;
     int sueldo;
-    int horasTrabajadas;
+    int horasTrabajadas;*/
 
     char nombre[128];
 
@@ -358,11 +358,12 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
         for(i=0; i < ll_len(pArrayListEmployee); i++)
         {
             pEmpleado = ll_get(pArrayListEmployee,i);
-            employee_getNombre(pEmpleado, nombre);
+            mostrarEmpleado(pEmpleado);
+            /*employee_getNombre(pEmpleado, nombre);
             employee_getId(pEmpleado,&id);
             employee_getSueldo(pEmpleado,&sueldo);
             employee_getHorasTrabajadas(pEmpleado,&horasTrabajadas);
-            printf("%d -- %20s %20d %20d \n\n", id, nombre, sueldo, horasTrabajadas);
+            printf("%d -- %20s %20d %20d \n\n", id, nombre, sueldo, horasTrabajadas);*/
         }
     }
     return retorno;
@@ -448,4 +449,3 @@ int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
     }
     return retorno;
 }
-

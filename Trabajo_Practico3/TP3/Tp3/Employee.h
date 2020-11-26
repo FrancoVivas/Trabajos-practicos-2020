@@ -9,7 +9,7 @@
 typedef struct
 {
     int id;
-    char nombre[128];
+    char nombre[100];
     int horasTrabajadas;
     int sueldo;
 }Employee;

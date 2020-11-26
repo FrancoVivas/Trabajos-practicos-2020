@@ -105,7 +105,7 @@ int esAlfaNumerico(char str[])
     int i=0;
     while (str[i] != '\0')
     {
-        if((str[i] != ' ') && (str[i] <  'a' || str [i] > 'z') && (str[i] < 'A' || str[i] > 'Z') && (str[i] < '0' || str[i] > '9'))
+        if((str[i] != ' ')&&(str[i]<'a' || str [i] > 'z') && (str[i]< 'A'|| str[i] >'Z') && (str[i]< '0' || str[i]>'9'))
         return 0;
         i++;
     }
@@ -140,7 +140,7 @@ int getStringLetras(char mensaje[], char input[])
 
 int getStringNumeros(char mensaje[], char input[])
 {
-    char auxiliar[256];
+    char auxiliar[100];
     getString(mensaje, auxiliar);
     if(esNumerico(auxiliar))
     {
@@ -155,7 +155,7 @@ int getStringNumeros(char mensaje[], char input[])
 
 int getAlfaNumerico(char mensaje[], char input[])
 {
-    char auxiliar[256];
+    char auxiliar[100];
     getString(mensaje, auxiliar);
     if(esAlfaNumerico(auxiliar))
     {
