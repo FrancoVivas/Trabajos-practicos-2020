@@ -563,16 +563,6 @@ LinkedList* ll_clone(LinkedList* this)
  * \return int Retorna  (-1) Error: si el puntero a la listas es NULL
                                 ( 0) Si ok
  */
-LinkedList* ll_clone(LinkedList* this)
-{
-    LinkedList* cloneArray= NULL;
-    if(this != NULL)
-    {
-        cloneArray= ll_subList(this, 0, this->size);
-    }
-    return cloneArray;
-}
-
 
 int ll_sort(LinkedList* this, int (*pFunc)(void*,void*), int order)
 {
